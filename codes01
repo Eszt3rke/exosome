@@ -1,6 +1,14 @@
-adatok=read.delim("/Users/eszterkriko/Downloads/gene_result.txt", header = TRUE, sep = "\t")
-colnames(adatok)
+#adatok=read.delim("/Users/eszterkriko/Downloads/gene_result.txt", header = TRUE, sep = "\t")
+#colnames(adatok)
 ##########################
 adatok=read.csv("/Users/eszterkriko/Downloads/endogenous_human_retrovirus.csv")
 colnames(adatok)
 dim(adatok)
+EntrezUID=adatok[,10]
+write.table(EntrezUID, "/Users/eszterkriko/Downloads/EntrezUID_exosome.txt", sep="\t")
+Identifiers=adatok[,"Identifiers"]
+Identifiers=gsub('GeneID:','',Identifiers)
+write.table(Identifiers, "/Users/eszterkriko/Downloads/Identifiers_exosome.txt", sep="\t")
+
+###
+
