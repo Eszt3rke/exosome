@@ -1,0 +1,6 @@
+adatok=read.delim("/Users/eszterkriko/Downloads/gene_result.txt", header = TRUE, sep = "\t")
+colnames(adatok)
+##########################
+adatok=read.csv("/Users/eszterkriko/Downloads/endogenous_human_retrovirus.csv")
+colnames(adatok)
+dim(adatok)
