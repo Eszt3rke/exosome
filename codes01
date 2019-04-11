@@ -45,6 +45,9 @@ ids
 new=gsub(" ", "\n", ids)
 write(new, "./entrez_ids.txt", sep="\n")
 
+
+#bash
+
 while read -r line
 do
 efetch -db nuccore -format fasta -id $line
