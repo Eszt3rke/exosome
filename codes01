@@ -12,3 +12,4 @@ write.table(Identifiers, "/Users/eszterkriko/Downloads/Identifiers_exosome.txt",
 
 ###
 
+for f in (efetch -db protein -format fasta -id AEE52072.1,ADV47642.1 > my_seqs.faa
