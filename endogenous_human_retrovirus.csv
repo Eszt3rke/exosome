@@ -1,0 +1,252 @@
+Title,URL,Description,Details,ShortDetails,Resource,Type,Identifiers,Db,EntrezUID,Properties
+"LOC106128902 - AZFa HERV15yq1 recombination region[  ]","/gene/106128902","This region is known to undergo non-allelic homologous recombination (NAHR) with a similar low-copy repeat region, the AZFa HERV15yq2 (azoospermia factor a human endogenous retr...","
+                                    Chromosome: Y; Location: Yq11",,"Entrez Gene","locus","GeneID:106128902","gene","106128902",
+"LOC108004538 - AZFa HERV15yq2 recombination region[  ]","/gene/108004538","This region is known to undergo non-allelic homologous recombination (NAHR) with a similar low-copy repeat region, the AZFa HERV15yq1 (azoospermia factor a human endogenous retr...","
+                                    Chromosome: Y; Location: Yq11",,"Entrez Gene","locus","GeneID:108004538","gene","108004538",
+"ERVFRD-2 - endogenous retrovirus group FRD member 2[  ]","/gene/388560","","
+                                    Chromosome: 19; Location: 19q13.41",,"Entrez Gene","locus","GeneID:388560","gene","388560",
+"ERVI-1 - endogenous retrovirus group I member 1[  ]","/gene/100131068","","
+                                    Chromosome: 9",,"Entrez Gene","locus","GeneID:100131068","gene","100131068",
+"ERV18-1 - endogenous retrovirus group 18 member 1[  ]","/gene/100133791","","
+                                    Chromosome: 15",,"Entrez Gene","locus","GeneID:100133791","gene","100133791",
+"ERVK11-1 - endogenous retrovirus group K11 member 1[  ]","/gene/100859922","","
+                                    Chromosome: 1; Location: 1p13.3",,"Entrez Gene","locus","GeneID:100859922","gene","100859922",
+"ERVK9-9 - endogenous retrovirus group K9, member 9[  ]","/gene/111188137","","
+                                    Chromosome: 17; Location: 17p13.2",,"Entrez Gene","locus","GeneID:111188137","gene","111188137",
+"ERVK9-11 - endogenous retrovirus group K9, member 11[  ]","/gene/111188141","","
+                                    Chromosome: 19; Location: 19q13.2",,"Entrez Gene","locus","GeneID:111188141","gene","111188141",
+"ERVK9-7 - endogenous retrovirus group K9, member 7[  ]","/gene/111188142","","
+                                    Chromosome: 7; Location: 7p14.2",,"Entrez Gene","locus","GeneID:111188142","gene","111188142",
+"ERVK9-4 - endogenous retrovirus group K9, member 4[  ]","/gene/111188143","","
+                                    Chromosome: 5; Location: 5p13.2",,"Entrez Gene","locus","GeneID:111188143","gene","111188143",
+"ERVK9-10 - endogenous retrovirus group K9, member 10[  ]","/gene/111188144","","
+                                    Chromosome: 17; Location: 17q21.32",,"Entrez Gene","locus","GeneID:111188144","gene","111188144",
+"ERVK9-8 - endogenous retrovirus group K9, member 8[  ]","/gene/111188145","","
+                                    Chromosome: 8; Location: 8q11.23",,"Entrez Gene","locus","GeneID:111188145","gene","111188145",
+"ERVK9-6 - endogenous retrovirus group K9, member 6[  ]","/gene/111188146","","
+                                    Chromosome: 6; Location: 6q21",,"Entrez Gene","locus","GeneID:111188146","gene","111188146",
+"ERVK9-5 - endogenous retrovirus group K9, member 5[  ]","/gene/111188147","","
+                                    Chromosome: 5; Location: 5p15.33",,"Entrez Gene","locus","GeneID:111188147","gene","111188147",
+"ERVK9-3 - endogenous retrovirus group K9, member 3[  ]","/gene/111188148","","
+                                    Chromosome: 3; Location: 3q27.2",,"Entrez Gene","locus","GeneID:111188148","gene","111188148",
+"ERVK9-2 - endogenous retrovirus group K9, member 2[  ]","/gene/111188149","","
+                                    Chromosome: 2; Location: 2p24.1",,"Entrez Gene","locus","GeneID:111188149","gene","111188149",
+"ERVK9-1 - endogenous retrovirus group K9, member 1[  ]","/gene/111188150","","
+                                    Chromosome: 1; Location: 1q21.2",,"Entrez Gene","locus","GeneID:111188150","gene","111188150",
+"ERVK-32 - endogenous retrovirus group K member 32, envelope[  ]","/gene/110006328","","
+                                    Chromosome: 6; Location: 6q14.1",,"Entrez Gene","locus","GeneID:110006328","gene","110006328",
+"ERVW-28 - endogenous retrovirus group W member 28[  ]","/gene/105694156","","
+                                    Chromosome: 17; Location: 17q12b",,"Entrez Gene","locus","GeneID:105694156","gene","105694156",
+"ERVW-8 - endogenous retrovirus group W member 8[  ]","/gene/106144559","","
+                                    Chromosome: 1",,"Entrez Gene","locus","GeneID:106144559","gene","106144559",
+"ERVW-11 - endogenous retrovirus group W member 11[  ]","/gene/106144560","","
+                                    Chromosome: 1",,"Entrez Gene","locus","GeneID:106144560","gene","106144560",
+"ERVW-14 - endogenous retrovirus group W member 14[  ]","/gene/106144561","","
+                                    Chromosome: 2",,"Entrez Gene","locus","GeneID:106144561","gene","106144561",
+"ERVW-18 - endogenous retrovirus group W member 18[  ]","/gene/106144562","","
+                                    Chromosome: 6",,"Entrez Gene","locus","GeneID:106144562","gene","106144562",
+"ERVW-22 - endogenous retrovirus group W member 22[  ]","/gene/106144563","","
+                                    Chromosome: 9",,"Entrez Gene","locus","GeneID:106144563","gene","106144563",
+"ERVW-24 - endogenous retrovirus group W member 24[  ]","/gene/106144564","","
+                                    Chromosome: 12",,"Entrez Gene","locus","GeneID:106144564","gene","106144564",
+"ERVW-27 - endogenous retrovirus group W member 27[  ]","/gene/106144565","","
+                                    Chromosome: 14",,"Entrez Gene","locus","GeneID:106144565","gene","106144565",
+"ERVW-17 - endogenous retrovirus group W member 17[  ]","/gene/106144567","","
+                                    Chromosome: 6; Location: 6q21",,"Entrez Gene","locus","GeneID:106144567","gene","106144567",
+"ERVW-19 - endogenous retrovirus group W member 19[  ]","/gene/106144571","","
+                                    Chromosome: 6; Location: 6q27",,"Entrez Gene","locus","GeneID:106144571","gene","106144571",
+"ERVW-26 - endogenous retrovirus group W member 26[  ]","/gene/106144572","","
+                                    Chromosome: 14",,"Entrez Gene","locus","GeneID:106144572","gene","106144572",
+"ERVW-13 - endogenous retrovirus group W member 13[  ]","/gene/106144576","","
+                                    Chromosome: 2; Location: 2q13",,"Entrez Gene","locus","GeneID:106144576","gene","106144576",
+"ERVW-10 - endogenous retrovirus group W member 10[  ]","/gene/106144579","","
+                                    Chromosome: 1; Location: 1q32.1",,"Entrez Gene","locus","GeneID:106144579","gene","106144579",
+"ERVW-12 - endogenous retrovirus group W member 12[  ]","/gene/106144580","","
+                                    Chromosome: 2; Location: 2p16.2",,"Entrez Gene","locus","GeneID:106144580","gene","106144580",
+"ERVW-16 - endogenous retrovirus group W member 16[  ]","/gene/106144581","","
+                                    Chromosome: 4; Location: 4q28.3",,"Entrez Gene","locus","GeneID:106144581","gene","106144581",
+"ERVW-29 - endogenous retrovirus group W member 29[  ]","/gene/106144583","","
+                                    Chromosome: 18; Location: 18p11.21",,"Entrez Gene","locus","GeneID:106144583","gene","106144583",
+"ERVW-21 - endogenous retrovirus group W member 21[  ]","/gene/106144587","","
+                                    Chromosome: 8",,"Entrez Gene","locus","GeneID:106144587","gene","106144587",
+"ERVW-7 - endogenous retrovirus group W member 7[  ]","/gene/106144589","","
+                                    Chromosome: 1",,"Entrez Gene","locus","GeneID:106144589","gene","106144589",
+"ERVW-15 - endogenous retrovirus group W member 15[  ]","/gene/106144597","","
+                                    Chromosome: 4; Location: 4p16.1",,"Entrez Gene","locus","GeneID:106144597","gene","106144597",
+"ERVW-23 - endogenous retrovirus group W member 23[  ]","/gene/106144603","","
+                                    Chromosome: 12; Location: 12p13.31",,"Entrez Gene","locus","GeneID:106144603","gene","106144603",
+"ERVW-20 - endogenous retrovirus group W member 20[  ]","/gene/106144604","","
+                                    Chromosome: 8; Location: 8q21.11",,"Entrez Gene","locus","GeneID:106144604","gene","106144604",
+"ERVW-25 - endogenous retrovirus group W member 25[  ]","/gene/106144605","","
+                                    Chromosome: 13; Location: 13q13.3",,"Entrez Gene","locus","GeneID:106144605","gene","106144605",
+"ERVW-9 - endogenous retrovirus group W member 9[  ]","/gene/106699568","","
+                                    Chromosome: 1; Location: 1q25.2",,"Entrez Gene","locus","GeneID:106699568","gene","106699568",
+"ERVK-28 - endogenous retrovirus group K member 28[  ]","/gene/106707175","","
+                                    Chromosome: 19; Location: 19q11",,"Entrez Gene","locus","GeneID:106707175","gene","106707175",
+"ERVK-15 - endogenous retrovirus group K member 15[  ]","/gene/100616443","","
+                                    Chromosome: 7; Location: 7q34",,"Entrez Gene","locus","GeneID:100616443","gene","100616443",
+"ERVK-13 - endogenous retrovirus group K member 13[  ]","/gene/100861467","","
+                                    Chromosome: 3; Location: 3q24",,"Entrez Gene","locus","GeneID:100861467","gene","100861467",
+"ERVK-17 - endogenous retrovirus group K member 17[  ]","/gene/100862686","","",,"Entrez Gene","locus","GeneID:100862686","gene","100862686",
+"ERVK-14 - endogenous retrovirus group K member 14[  ]","/gene/100862687","","
+                                    Chromosome: 7; Location: 7q22.1",,"Entrez Gene","locus","GeneID:100862687","gene","100862687",
+"ERVK-3 - endogenous retrovirus group K member 3[  ]","/gene/100862689","","
+                                    Chromosome: 3; Location: 3q13.2",,"Entrez Gene","locus","GeneID:100862689","gene","100862689",
+"ERVMER61-1 - endogenous retrovirus group MER61 member 1[  ]","/gene/339476","","
+                                    Chromosome: 1; Location: 1q31.1",,"Entrez Gene","locus","GeneID:339476","gene","339476",
+"ERV3-2 - endogenous retrovirus group 3 member 2[  ]","/gene/57612","","
+                                    Chromosome: 7; Location: 7q33",,"Entrez Gene","locus","GeneID:57612","gene","57612",
+"ERVK3-4 - endogenous retrovirus group K3 member 4[  ]","/gene/100616106","","
+                                    Chromosome: 11; Location: 11p15.4",,"Entrez Gene","locus","GeneID:100616106","gene","100616106",
+"ERVK3-6 - endogenous retrovirus group K3 member 6[  ]","/gene/100616107","","
+                                    Chromosome: 19; Location: 19q13.41",,"Entrez Gene","locus","GeneID:100616107","gene","100616107",
+"ERVK3-8 - endogenous retrovirus group K3 member 8[  ]","/gene/100616108","","
+                                    Chromosome: 20; Location: 20p11.21",,"Entrez Gene","locus","GeneID:100616108","gene","100616108",
+"ERVK3-7 - endogenous retrovirus group K3 member 7[  ]","/gene/100616199","","
+                                    Chromosome: 19; Location: 19p13.2",,"Entrez Gene","locus","GeneID:100616199","gene","100616199",
+"ERVK3-5 - endogenous retrovirus group K3 member 5[  ]","/gene/100616412","","
+                                    Chromosome: 12; Location: 12q24.12",,"Entrez Gene","locus","GeneID:100616412","gene","100616412",
+"ERVK3-3 - endogenous retrovirus group K3 member 3[  ]","/gene/100616462","","
+                                    Chromosome: 5; Location: 5q13.2",,"Entrez Gene","locus","GeneID:100616462","gene","100616462",
+"ERVH-6 - endogenous retrovirus group H member 6[  ]","/gene/51581","","
+                                    Chromosome: Y; Location: Yq11.223",,"Entrez Gene","locus","GeneID:51581","gene","51581",
+"ERVH-5 - endogenous retrovirus group H member 5[  ]","/gene/100862699","","
+                                    Chromosome: 10; Location: 10p12.1",,"Entrez Gene","locus","GeneID:100862699","gene","100862699",
+"ERVK-29 - endogenous retrovirus group K member 29[  ]","/gene/106144555","","
+                                    Chromosome: 19",,"Entrez Gene","locus","GeneID:106144555","gene","106144555",
+"ERVK-27 - endogenous retrovirus group K member 27[  ]","/gene/106144566","","
+                                    Chromosome: 11; Location: 11q12.3",,"Entrez Gene","locus","GeneID:106144566","gene","106144566",
+"ERVW-5 - endogenous retrovirus group W member 5[  ]","/gene/100862695","","
+                                    Chromosome: 3; Location: 3q26.32",,"Entrez Gene","locus","GeneID:100862695","gene","100862695",
+"ERVW-3 - endogenous retrovirus group W member 3[  ]","/gene/100862696","","
+                                    Chromosome: 3; Location: 3q23",,"Entrez Gene","locus","GeneID:100862696","gene","100862696",
+"ERVFH21-1 - endogenous retrovirus group FH21 member 1[  ]","/gene/100616104","","
+                                    Chromosome: 7; Location: 7p21.3",,"Entrez Gene","locus","GeneID:100616104","gene","100616104",
+"ERVK3-2 - endogenous retrovirus group K3 member 2[  ]","/gene/100862697","","
+                                    Chromosome: 14; Location: 14q24.2",,"Entrez Gene","locus","GeneID:100862697","gene","100862697",
+"ERVE-2 - endogenous retrovirus group E member 2[  ]","/gene/100862691","","
+                                    Chromosome: 11; Location: 11q13.2",,"Entrez Gene","locus","GeneID:100862691","gene","100862691",
+"ERVE-3 - endogenous retrovirus group E member 3[  ]","/gene/100862700","","
+                                    Chromosome: 8; Location: 8p23.1",,"Entrez Gene","locus","GeneID:100862700","gene","100862700",
+"ERVK-31 - endogenous retrovirus group K member 31[  ]","/gene/106144590","","
+                                    Chromosome: 5; Location: 5q15",,"Entrez Gene","locus","GeneID:106144590","gene","106144590",
+"ERVK-30 - endogenous retrovirus group K member 30[  ]","/gene/106144591","","
+                                    Chromosome: 2",,"Entrez Gene","locus","GeneID:106144591","gene","106144591",
+"ERVK-23 - endogenous retrovirus group K member 23[  ]","/gene/100616197","","
+                                    Chromosome: 21; Location: 21q21.1",,"Entrez Gene","locus","GeneID:100616197","gene","100616197",
+"ERVK-20 - endogenous retrovirus group K member 20[  ]","/gene/100616444","","
+                                    Chromosome: 11; Location: 11q23.3",,"Entrez Gene","locus","GeneID:100616444","gene","100616444",
+"ERVK-22 - endogenous retrovirus group K member 22[  ]","/gene/100616445","","
+                                    Chromosome: 19; Location: 19p13.3",,"Entrez Gene","locus","GeneID:100616445","gene","100616445",
+"ERVH-7 - endogenous retrovirus group H member 7[  ]","/gene/100862698","","
+                                    Chromosome: 14; Location: 14q32.12",,"Entrez Gene","locus","GeneID:100862698","gene","100862698",
+"ERVK-2 - endogenous retrovirus group K member 2[  ]","/gene/100616100","","
+                                    Chromosome: 3; Location: 3p25.3",,"Entrez Gene","locus","GeneID:100616100","gene","100616100",
+"ERVK-12 - endogenous retrovirus group K member 12[  ]","/gene/100616442","","
+                                    Chromosome: 4; Location: 4q32.3",,"Entrez Gene","locus","GeneID:100616442","gene","100616442",
+"ERVH-3 - endogenous retrovirus group H member 3[  ]","/gene/100289683","","
+                                    Chromosome: 6; Location: 6q12",,"Entrez Gene","locus","GeneID:100289683","gene","100289683",
+"ERVS71-2 - endogenous retrovirus group S71 member 2[  ]","/gene/100616200","","
+                                    Chromosome: 10; Location: 10p11.1",,"Entrez Gene","locus","GeneID:100616200","gene","100616200",
+"ERVH-2 - endogenous retrovirus group H member 2[  ]","/gene/100616461","","
+                                    Chromosome: X; Location: Xp22.32",,"Entrez Gene","locus","GeneID:100616461","gene","100616461",
+"ERVW-6 - endogenous retrovirus group W member 6[  ]","/gene/100616198","","
+                                    Chromosome: 11; Location: 11q14.1",,"Entrez Gene","locus","GeneID:100616198","gene","100616198",
+"ERVK-16 - endogenous retrovirus group K member 16[  ]","/gene/100616411","","
+                                    Chromosome: 10; Location: 10p14",,"Entrez Gene","locus","GeneID:100616411","gene","100616411",
+"ERVK-1 - endogenous retrovirus group K member 1[  ]","/gene/100862690","","
+                                    Chromosome: 1; Location: 1p31.1",,"Entrez Gene","locus","GeneID:100862690","gene","100862690",
+"LOC107986101 - endogenous retrovirus group K member 21 Gag polyprotein-like[  ]","/gene/107986101","","
+                                    Chromosome: 3; Location: 3p12.3",,"Entrez Gene","locus","GeneID:107986101","gene","107986101",
+"LOC105376906 - endogenous retrovirus group K member 19 Pol protein[  ]","/gene/105376906","","
+                                    Chromosome: 19; Location: 19q11",,"Entrez Gene","locus","GeneID:105376906","gene","105376906",
+"ERVK9-12 - endogenous retrovirus group K9, member 12[  ]","/gene/105375011","","
+                                    Chromosome: 6; Location: 6p22.1",,"Entrez Gene","locus","GeneID:105375011","gene","105375011",
+"ERVK-25 - endogenous retrovirus group K member 25[  ]","/gene/100862683","","
+                                    Chromosome: 11; Location: 11q22.1",,"Entrez Gene","locus","GeneID:100862683","gene","100862683",
+"ERVPABLB-1 - endogenous retrovirus group PABLB member 1, envelope[  ]","/gene/100862693","","
+                                    Chromosome: 3; Location: 3p24.3",,"Entrez Gene","locus","GeneID:100862693","gene","100862693",
+"ERVK-26 - endogenous retrovirus group K member 26[  ]","/gene/103539957","","
+                                    Chromosome: 8; Location: 8p23.1",,"Entrez Gene","locus","GeneID:103539957","gene","103539957",
+"LOC100533728 - endogenous retrovirus group FRD member 1 pseudogene[  ]","/gene/100533728","","
+                                    Chromosome: X; Location: Xq13.3",,"Entrez Gene","locus","GeneID:100533728","gene","100533728",
+"LOC100887077 - endogenous retrovirus group 3 member 1 pseudogene[  ]","/gene/100887077","","
+                                    Chromosome: 7; Location: 7q33",,"Entrez Gene","locus","GeneID:100887077","gene","100887077",
+"LOC100887078 - endogenous retrovirus group 3 member 1 pseudogene[  ]","/gene/100887078","","
+                                    Chromosome: 1; Location: 1q44",,"Entrez Gene","locus","GeneID:100887078","gene","100887078",
+"ERVS71-1 - endogenous retrovirus group S71 member 1, envelope[  ]","/gene/100862694","","
+                                    Chromosome: 19; Location: 19p12",,"Entrez Gene","locus","GeneID:100862694","gene","100862694",
+"ERVW-4 - endogenous retrovirus group W member 4[  ]","/gene/100616496","","
+                                    Chromosome: 15; Location: 15q21.3",,"Entrez Gene","locus","GeneID:100616496","gene","100616496",
+"ERVH-4 - endogenous retrovirus group H member 4[  ]","/gene/51359","","
+                                    Chromosome: 14",,"Entrez Gene","locus","GeneID:51359","gene","51359",
+"ERVW-2 - endogenous retrovirus group W member 2[  ]","/gene/100379323","","
+                                    Chromosome: X; Location: Xq22.3",,"Entrez Gene","locus","GeneID:100379323","gene","100379323",
+"ERVK-11 - endogenous retrovirus group K member 11[  ]","/gene/100862688","","
+                                    Chromosome: 3; Location: 3q27.2",,"Entrez Gene","locus","GeneID:100862688","gene","100862688",
+"LOC107984203 - endogenous retrovirus group K member 6 Env polyprotein[  ]","/gene/107984203","","
+                                    Chromosome: 10; Location: 10p14",,"Entrez Gene","locus","GeneID:107984203","gene","107984203",
+"LOC107986113 - endogenous retrovirus group K member 7 Gag polyprotein[  ]","/gene/107986113","","
+                                    Chromosome: 3; Location: 3q13.2",,"Entrez Gene","locus","GeneID:107986113","gene","107986113",
+"ERVFRD-3 - endogenous retrovirus group FRD member 3[  ]","/gene/100533725","","
+                                    Chromosome: 9; Location: 9p21.3",,"Entrez Gene","locus","GeneID:100533725","gene","100533725",
+"ERVE-4 - endogenous retrovirus group E member 4[  ]","/gene/100616105","","
+                                    Chromosome: 6; Location: 6q15",,"Entrez Gene","locus","GeneID:100616105","gene","100616105",
+"ERVH-1 - endogenous retrovirus group H member 1[  ]","/gene/100616446","","
+                                    Chromosome: 4; Location: 4p15.2",,"Entrez Gene","locus","GeneID:100616446","gene","100616446",
+"LOC105374013 - endogenous retrovirus group K member 5 Gag polyprotein[  ]","/gene/105374013","","
+                                    Chromosome: 3; Location: 3q12.3",,"Entrez Gene","locus","GeneID:105374013","gene","105374013",
+"ERVFC1 - endogenous retrovirus group FC1 Env polyprotein[  ]","/gene/105373297","","
+                                    Chromosome: X; Location: Xq21.33",,"Entrez Gene","locus","GeneID:105373297","gene","105373297",
+"ERVK3-1 - endogenous retrovirus group K3 member 1[  ]","/gene/105372481","","
+                                    Chromosome: 19; Location: 19q13.43",,"Entrez Gene","locus","GeneID:105372481","gene","105372481",
+"ERVK-9 - endogenous retrovirus group K member 9[  ]","/gene/100616102","","
+                                    Chromosome: 6; Location: 6q14.1",,"Entrez Gene","locus","GeneID:100616102","gene","100616102",
+"ERVK-24 - endogenous retrovirus group K member 24[  ]","/gene/100862684","","
+                                    Chromosome: 22; Location: 22q11.21",,"Entrez Gene","locus","GeneID:100862684","gene","100862684",
+"ERVK-4 - endogenous retrovirus group K member 4[  ]","/gene/60359","","
+                                    Chromosome: 3; Location: 3q21.2",,"Entrez Gene","locus","GeneID:60359","gene","60359",
+"LOC105372315 - endogenous retrovirus group S71 member 1 Env polyprotein[  ]","/gene/105372315","","
+                                    Chromosome: 19; Location: 19p12",,"Entrez Gene","locus","GeneID:105372315","gene","105372315",
+"ERVK-21 - endogenous retrovirus group K member 21, envelope[  ]","/gene/100616103","","
+                                    Chromosome: 12; Location: 12q14.1",,"Entrez Gene","locus","GeneID:100616103","gene","100616103",
+"ERVFC1-1 - endogenous retrovirus group FC1 member 1, envelope[  ]","/gene/346547","","
+                                    Chromosome: 7; Location: 7q36.2",,"Entrez Gene","locus","GeneID:346547","gene","346547",
+"ERVK13-1 - endogenous retrovirus group K13 member 1[  ]","/gene/100507321","","
+                                    Chromosome: 16; Location: 16p13.3",,"Entrez Gene","locus","GeneID:100507321","gene","100507321",
+"ERVK-8 - endogenous retrovirus group K member 8, envelope[  ]","/gene/619465","","
+                                    Chromosome: 8; Location: 8p23.1",,"Entrez Gene","locus","GeneID:619465","gene","619465",
+"LOC105372269 - endogenous retrovirus group K member 8 Gag polyprotein-like[  ]","/gene/105372269","","
+                                    Chromosome: 19; Location: 19p13.2",,"Entrez Gene","locus","GeneID:105372269","gene","105372269",
+"ERV9-1 - endogenous retrovirus group 9 member 1[  ]","/gene/100616497","","
+                                    Chromosome: 11; Location: 11q13.2",,"Entrez Gene","locus","GeneID:100616497","gene","100616497",
+"ERVK-5 - endogenous retrovirus group K member 5[  ]","/gene/60358","","
+                                    Chromosome: 3; Location: 3q12.3",,"Entrez Gene","locus","GeneID:60358","gene","60358",
+"ERVE-1 - endogenous retrovirus group E member 1[  ]","/gene/85314","","
+                                    Chromosome: 17; Location: 17q11.2",,"Entrez Gene","locus","GeneID:85314","gene","85314",
+"ERVH48-1 - endogenous retrovirus group 48 member 1[  ]","/gene/90625","Many different endogenous retrovirus families are expressed in normal placental tissue at high levels, suggesting that endogenous retroviruses are functionally important in repr...","
+                                    Chromosome: 21; Location: 21q22.3",,"Entrez Gene","locus","GeneID:90625","gene","90625",
+"ERVK-19 - endogenous retrovirus group K member 19, envelope[  ]","/gene/100862685","","
+                                    Chromosome: 19; Location: 19q11",,"Entrez Gene","locus","GeneID:100862685","gene","100862685",
+"LOC105377641 - endogenous retrovirus group PABLB member 1 Env polyprotein[  ]","/gene/105377641","","
+                                    Chromosome: 3; Location: 3p24.3",,"Entrez Gene","locus","GeneID:105377641","gene","105377641",
+"ERVK-7 - endogenous retrovirus group K member 7[  ]","/gene/449619","","
+                                    Chromosome: 1; Location: 1q22",,"Entrez Gene","locus","GeneID:449619","gene","449619",
+"ERVMER34-1 - endogenous retrovirus group MER34 member 1, envelope[  ]","/gene/100288413","","
+                                    Chromosome: 4; Location: 4q12",,"Entrez Gene","locus","GeneID:100288413","gene","100288413",
+"ERVV-1 - endogenous retrovirus group V member 1, envelope[  ]","/gene/147664","Many different human endogenous retrovirus (HERV) families are expressed in normal placental tissue at high levels, suggesting that HERVs are functionally important in reproduct...","
+                                    Chromosome: 19; Location: 19q13.41",,"Entrez Gene","locus","GeneID:147664","gene","147664",
+"ERVK-10 - endogenous retrovirus group K member 10[  ]","/gene/100616101","","
+                                    Chromosome: 5; Location: 5q33.3",,"Entrez Gene","locus","GeneID:100616101","gene","100616101",
+"ERVV-2 - endogenous retrovirus group V member 2, envelope[  ]","/gene/100271846","Many different human endogenous retrovirus (HERV) families are expressed in normal placental tissue at high levels, suggesting that HERVs are functionally important in reproduct...","
+                                    Chromosome: 19; Location: 19q13.41",,"Entrez Gene","locus","GeneID:100271846","gene","100271846",
+"ERVK-18 - endogenous retrovirus group K member 18[  ]","/gene/100775105","","
+                                    Chromosome: 1; Location: 1q23.3",,"Entrez Gene","locus","GeneID:100775105","gene","100775105",
+"ERVFRD-1 - endogenous retrovirus group FRD member 1, envelope[  ]","/gene/405754","Many different human endogenous retrovirus (HERV) families are expressed in normal placental tissue at high levels, suggesting that HERVs are functionally important in reproduct...","
+                                    Chromosome: 6; Location: 6p24.2",,"Entrez Gene","locus","GeneID:405754","gene","405754",
+"ERVK-6 - endogenous retrovirus group K member 6, envelope[  ]","/gene/64006","","
+                                    Chromosome: 7; Location: 7p22.1",,"Entrez Gene","locus","GeneID:64006","gene","64006",
+"ERV3-1 - endogenous retrovirus group 3 member 1, envelope[  ]","/gene/2086","This gene contains sequence derived from endogenous retrovirus, and is therefore similar to multiple other loci in the genome. Transcripts at this locus encode a conserved prote...","
+                                    Chromosome: 7; Location: 7q11.21",,"Entrez Gene","locus","GeneID:2086","gene","2086",
+"ERVW-1 - endogenous retrovirus group W member 1, envelope[  ]","/gene/30816","Many different human endogenous retrovirus (HERV) families are expressed in normal placental tissue at high levels, suggesting that HERVs are functionally important in reproduct...","
+                                    Chromosome: 7; Location: 7q21.2",,"Entrez Gene","locus","GeneID:30816","gene","30816",
