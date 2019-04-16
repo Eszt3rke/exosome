@@ -10,7 +10,16 @@ Identifiers=adatok[,"Identifiers"]
 Identifiers=gsub('GeneID:','',Identifiers)
 write.table(Identifiers, "/Users/eszterkriko/Downloads/Identifiers_exosome.txt", sep="\t")
 
-###
+###serveren#######
+#R
+
+adatok=read.csv("./endogenous_human_retrovirus.csv")
+EntrezUID=adatok[,10]
+write.table(EntrezUID, "./EntrezUID_exosome_t.txt", sep="\t")
+write.table(EntrezUID, "./EntrezUID_exosome.txt", sep="\n")
+
+
+##################
 
 ##minta####efetch -db protein -format fasta -id AEE52072.1,ADV47642.1 > my_seqs.faa
 
@@ -52,3 +61,7 @@ while read -r line
 do
 efetch -db nuccore -format fasta -id $line
 done < entrez_ids.txt
+
+##########serveren###########
+
+
