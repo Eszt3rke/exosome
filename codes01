@@ -48,6 +48,7 @@ done
 
 #####innentől lett jó#####
 ##########serveren###########start
+##########download endogen retroviruses###########
 #R
 
 ids=("106128902 108004538 388560 100131068 100133791 100859922 111188137 111188141 111188142 111188143 111188144 111188145 111188146 111188147 111188148 111188149 111188150 110006328 105694156 106144559 106144560 106144561 106144562 106144563 106144564 106144565 106144567 106144571 106144572 106144576 106144579 106144580 106144581 106144583 106144587 106144589 106144597 106144603 106144604 106144605 106699568 106707175 100616443 100861467 100862686 100862687 100862689 339476 57612 100616106 100616107 100616108 100616199 100616412 100616462 51581 100862699 106144555 106144566 100862695 100862696 100616104 100862697 100862691 100862700 106144590 106144591 100616197 100616444 100616445 100862698 100616100 100616442 100289683 100616200 100616461 100616198 100616411 100862690 107986101 105376906 105375011 100862683 100862693 103539957 100533728 100887077 100887078 100862694 100616496 51359 100379323 100862688 107984203 107986113 100533725 100616105 100616446 105374013 105373297 105372481 100616102 100862684 60359 105372315 100616103 346547 100507321 619465 105372269 100616497 60358 85314 90625 100862685 105377641 449619 100288413 147664 100616101 100271846 100775105 405754 64006 2086 30816")
@@ -70,9 +71,48 @@ do
 efetch -db nuccore -format fasta -id $line >$line.fa
 done < entrez_ids.txt
 
+#######download exosome data#########
+# Stop on any error. Print the commands as they execute.
+#set -uex
+# NCBI BioProject ID.
+#PRJN={{bioproject.value}}
+#
+# How many sequencing runs to get for the project.
+#RUNS={{runs.value}}
+#
+# How many reads to download from each run.
+#READS={{reads.value}}
+#
+# Obtain the run information.
+#esearch -db sra -query $PRJN | efetch -format runinfo > runinfo.csv
+#
+# Obtain the first few SRR numbers.
+#cat runinfo.csv | cut -f 1 -d , | grep SRR | head -$RUNS > runids.txt
+#
+# Create a directory for the sequencing data.
+#mkdir -p reads
+
+# Download the FASTQ data for each SRR number.
+cat runids.txt | parallel fastq-dump --split-files -X $READS -outdir reads {}
+#################################################################################
+export PATH=$PATH:/data/tools/edirect
+#
+mkdir exosome_data
+cd exosome_data
+PRJN=(PRJNA475497 PRJNA526037)
+#esearch -db sra -query $PRJN | efetch -format runinfo > runinfo.csv
+#cat runinfo.csv | cut -f 1 -d , | grep SRR  > exosome_ids.txt
+
+esearch -db sra -query PRJNA301162 | efetch --format runinfo |cut -d "," -f 1 > SRR.numbers
+
+while read -r line
+do
+efetch -db nuccore -format fasta -id $line >$line.fa
+done < exosome_ids.txt
+
 ##########serveren###########end
 
-####kraken_build_db#######
+####kraken_build_db#######nem ezzel dolgoztam#########+
 #
 #kraken-build --download-taxonomy --db $DBNAME
 
@@ -86,7 +126,14 @@ done
 
 
 kraken-build --build --db $kraken-build --build --db $DBNAME
+#############################
 
-
+#######STAR########
+#
+#########CAT egybe illeszteni#########
+#
+#bash
+#cat File1.txt File2.txt > union.txt
+cat *.fa > all_endogen_retrovirus.fa
 
 
