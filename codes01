@@ -95,15 +95,24 @@ done < entrez_ids.txt
 # Download the FASTQ data for each SRR number.
 cat runids.txt | parallel fastq-dump --split-files -X $READS -outdir reads {}
 #################################################################################
-export PATH=$PATH:/data/tools/edirect
+
 #
 mkdir exosome_data
 cd exosome_data
-PRJN=(PRJNA475497 PRJNA526037)
+
 #esearch -db sra -query $PRJN | efetch -format runinfo > runinfo.csv
 #cat runinfo.csv | cut -f 1 -d , | grep SRR  > exosome_ids.txt
 
-esearch -db sra -query PRJNA301162 | efetch --format runinfo |cut -d "," -f 1 > SRR.numbers
+PRJN=(PRJNA475497 PRJNA526037)
+
+export PATH=$PATH:/data/tools/edirect
+
+for PRJNA in "${PRJN[@]}"
+do
+esearch -db sra -query $PRJNA | efetch --format runinfo |cut -d "," -f 1 > exosome_ids.txt
+done
+
+#esearch -db sra -query $PRJNA | efetch --format runinfo |cut -d "," -f 1 > exosome_ids.txt
 
 while read -r line
 do
