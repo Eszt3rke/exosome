@@ -98,7 +98,7 @@ cat runids.txt | parallel fastq-dump --split-files -X $READS -outdir reads {}
 
 #
 mkdir exosome_data
-cd exosome_data
+cd exosome_03/exosome_data
 
 #esearch -db sra -query $PRJN | efetch -format runinfo > runinfo.csv
 #cat runinfo.csv | cut -f 1 -d , | grep SRR  > exosome_ids.txt
@@ -119,6 +119,8 @@ do
 efetch -db nuccore -format fasta -id $line >$line.fa
 done < exosome_ids.txt
 
+#NCBI efetc
+#SRA fastq-dump
 ##########serveren###########end
 
 ####kraken_build_db#######nem ezzel dolgoztam#########+
