@@ -94,7 +94,8 @@ done < entrez_ids.txt
 
 # Download the FASTQ data for each SRR number.
 cat runids.txt | parallel fastq-dump --split-files -X $READS -outdir reads {}
-#################################################################################
+
+####
 
 #
 mkdir exosome_data
@@ -103,21 +104,38 @@ cd exosome_03/exosome_data
 #esearch -db sra -query $PRJN | efetch -format runinfo > runinfo.csv
 #cat runinfo.csv | cut -f 1 -d , | grep SRR  > exosome_ids.txt
 
-PRJN=(PRJNA475497 PRJNA526037)
+#PRJN=(PRJNA475497 PRJNA526037)
 
-export PATH=$PATH:/data/tools/edirect
+#export PATH=$PATH:/data/tools/edirect
 
-for PRJNA in "${PRJN[@]}"
-do
-esearch -db sra -query $PRJNA | efetch --format runinfo |cut -d "," -f 1 > exosome_ids.txt
-done
+#for PRJNA in "${PRJN[@]}"
+#do
+#esearch -db sra -query $PRJNA | efetch --format runinfo |cut -d "," -f 1 > exosome_ids.txt
+#done
 
 #esearch -db sra -query $PRJNA | efetch --format runinfo |cut -d "," -f 1 > exosome_ids.txt
 
+#while read -r line
+#do
+#efetch -db nuccore -format fasta -id $line >$line.fa
+#done < exosome_ids.txt
+
+cd exosome_03/exosome_data
+export PATH=$PATH:/data/tools/sratoolkit.2.9.2-ubuntu64/bin
+
 while read -r line
 do
-efetch -db nuccore -format fasta -id $line >$line.fa
+fastq-dump $line >$line.fa
 done < exosome_ids.txt
+
+#ez kellett
+#sed '1d' exosome_ids.txt 
+
+PRJN=(PRJNA475497 PRJNA526037)
+for PRJNA in "${PRJN[@]}"
+do
+fastq-dump $line >$line.fa
+done
 
 #NCBI efetc
 #SRA fastq-dump
