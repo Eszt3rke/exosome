@@ -125,7 +125,7 @@ export PATH=$PATH:/data/tools/sratoolkit.2.9.2-ubuntu64/bin
 
 while read -r line
 do
-fastq-dump $line >$line.fa
+nohup fastq-dump $line 
 done < exosome_ids.txt
 
 #ez kellett
@@ -163,6 +163,27 @@ kraken-build --build --db $kraken-build --build --db $DBNAME
 #
 #bash
 #cat File1.txt File2.txt > union.txt
-cat *.fa > all_endogen_retrovirus.fa
+#STAR -- runMode genomeGenerate \
+     -- genomeDir STARindex \
+     -- genomeFastaFiles *.fa \
+     -- sjdbGTFfile Saccharomyces_cerevisiae.R64-1-1.95.gtf \
+     -- runThreadN 1 
+     
+     
+mkdir STARindex
+
+cp *.fa ./STARindex
+cd STARindex
+
+#cat *.fa > all_endogen_retrovirus.fa
+
+export PATH=$PATH:/data/tools/STAR/bin/Linux_x86_64
 
 
+STAR -- runMode genomeGenerate \
+     -- genomeDir ./ \
+     -- genomeFastaFiles ./*.fa \
+     -- runThreadN 1 
+     
+#itt egy genome indexet generáltunk, tehát ez egy genomeot tartalmaz   
+ls -lh
