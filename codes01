@@ -179,6 +179,10 @@ cd STARindex
 
 export PATH=$PATH:/data/tools/STAR/bin/Linux_x86_64
 
+##INDEX###STAR###
+
+cd STARindex
+export PATH=$PATH:/data/tools/STAR/bin/Linux_x86_64
 
 STAR -- runMode genomeGenerate \
      -- genomeDir ./ \
@@ -186,4 +190,20 @@ STAR -- runMode genomeGenerate \
      -- runThreadN 1 
      
 #itt egy genome indexet generáltunk, tehát ez egy genomeot tartalmaz   
+ls -lh
+
+##illesztes######STAR
+
+export PATH=$PATH:/data/tools/STAR/bin/Linux_x86_64
+
+cd /exosome_03
+
+STAR -- genomeDir STARindex \
+     -- readFilesIn ./exosome_data/*.fastq \
+     -- outFileNamePrefix mapped \
+     -- outFilterMultimapNmax 1 \
+     -- outReadsUnmapped Fastx \
+     -- twopassMode Basic \
+     -- runThreadN 1 
+
 ls -lh
