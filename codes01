@@ -227,3 +227,43 @@ plotTracks(
   from=2000, 
   to=3000
 )
+
+##vagy###
+
+# R
+library(Gviz)
+library(Biostrings)
+
+options(ucscChromosomeNames=FALSE)
+#nem USCS readeket használunk
+
+#ehhez CAT összeolvasztani ref geneket
+ref = readDNAStringSet('Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fsa')
+
+
+#ez lesz a bam fileom
+bam = 'mappedAligned.sortedByCoord.out.bam'
+
+#ez nem kll sztem
+chr = 'VII'
+s = 534000
+e = 534850
+
+tengely.track = GenomeAxisTrack()
+#felső tengelyt teszi rá
+illesztes.track = AlignmentsTrack(bam, start=s, end=e, chromosome=chr)
+#bam fileunnkat felhasználva az illesztési erdményeket gyűjti ki, a coverage-t és pipeline-t(lefedettség)
+szekvencia.track = SequenceTrack(ref)
+#
+
+plotTracks(
+  list(tengely.track, illesztes.track, szekvencia.track), 
+  type=c('coverage', 'pileup', 'sashimi'), 
+  chromosome=chr, 
+  from=s, 
+  to=e
+)
+
+#sashimi plot mutatja be a relációt
+
+###############
