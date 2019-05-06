@@ -196,14 +196,34 @@ ls -lh
 
 export PATH=$PATH:/data/tools/STAR/bin/Linux_x86_64
 
-cd /exosome_03
+cd exosome_03
 
-STAR -- genomeDir STARindex \
-     -- readFilesIn ./exosome_data/*.fastq \
+STAR -- genomeDir ./STARindex \
+     -- readFilesIn ./exosome_data/SRR8696980.fastq \
      -- outFileNamePrefix mapped \
      -- outFilterMultimapNmax 1 \
      -- outReadsUnmapped Fastx \
      -- twopassMode Basic \
-     -- runThreadN 1 
+     -- runThreadN 3 
 
 ls -lh
+
+###visualise###
+
+# R
+library(Gviz)
+
+
+options(ucscChromosomeNames=FALSE)
+
+bam.fajlom = 'mapped*.bam'
+
+illesztes.track = AlignmentsTrack(bam.fajlom, start=2000, end=3000)
+
+plotTracks(
+  list(illesztes.track), 
+  type=c('coverage', 'pileup'), 
+  chromosome='AF086833.2', 
+  from=2000, 
+  to=3000
+)
