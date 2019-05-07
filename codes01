@@ -72,6 +72,9 @@ efetch -db nuccore -format fasta -id $line >$line.fa
 done < entrez_ids.txt
 
 #######download exosome data#########
+#https://www.ncbi.nlm.nih.gov/sra/SRX4954863[accn]
+#https://www.ncbi.nlm.nih.gov/sra/SRX4191635[accn]
+
 # Stop on any error. Print the commands as they execute.
 #set -uex
 # NCBI BioProject ID.
@@ -137,8 +140,39 @@ do
 fastq-dump $line >$line.fa
 done
 
-#NCBI efetc
+#ena efetc
 #SRA fastq-dump
+#sra wget
+
+echo "SRR8133817
+SRR8133816
+SRR8133815
+SRR8133814
+SRR8133813
+SRR8133812
+SRR8133811
+SRR8133810
+SRR8133809
+SRR7288543
+SRR7288542
+SRR7288541
+SRR7288540" > exosome_selected_ids.txt
+
+sort -u exosome_selected_ids.txt| parallel prefetch {}
+
+export PATH=$PATH:/data/tools/edirect
+
+while read -r line
+do
+efetch -db nuccore -format fasta -id $line >$line.fa
+done < exosome_selected_ids.txt
+
+wget -r -l2 -A .gz ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR116/
+
+ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR728/000/SRR7288120/SRR7288120.fastq.gz
+
+wget -i exosome_index.txt
+
 ##########serveren###########end
 
 ####kraken_build_db#######nem ezzel dolgoztam#########+
