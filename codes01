@@ -160,6 +160,11 @@ SRR7288540" > exosome_selected_ids.txt
 
 sort -u exosome_selected_ids.txt| parallel prefetch {}
 
+while read -r line
+do
+prefetch $line
+done < exosome_selected_ids.txt
+
 export PATH=$PATH:/data/tools/edirect
 
 while read -r line
