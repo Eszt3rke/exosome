@@ -75,6 +75,49 @@ done < entrez_ids.txt
 #https://www.ncbi.nlm.nih.gov/sra/SRX4954863[accn]
 #https://www.ncbi.nlm.nih.gov/sra/SRX4191635[accn]
 
+#https://www.ebi.ac.uk/ena/data/view/PRJNA475497
+#https://www.ebi.ac.uk/ena/data/view/PRJNA501808
+
+
+
+#https://www.ebi.ac.uk/ena/data/view/PRJNA475497
+while read -r line
+do
+nohup wget $line 
+done < my_downloads.txt
+
+###saját  gépemen######
+my_data_vol2 = read.delim("/Users/eszterkriko/Downloads/PRJNA501808.txt")
+head(my_data_vol2)
+##spliteltek#######ujranézni######
+new_mydatavol2 = strsplit(my_data_vol2[[1]],split=";")
+new_mydatavol2 = str(strsplit(my_data_vol2[[1]],split=";"))
+new_mydatavol2=strsplit(ftps, split=";")
+new_mydatavol2 = gsub(";", "\\r\\n", ftps)
+
+my_data_2=strsplit(as.character(ftps), ";")
+write.csv(my_Data_2, "/Users/eszterkriko/Downloads/my_data_2.csv")
+
+downloadlinks=my_data_vol2$fastq_ftp
+write.csv(downloadlinks, "/Users/eszterkriko/Downloads/downloadlinks_vol2.csv")
+
+#https://www.ebi.ac.uk/ena/data/view/PRJNA501808
+while read -r line
+do
+nohup wget $line 
+done < my_downloads_vol2.txt
+
+#wget -r -l2 -A.txt ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR116/
+
+wget -r -i2 -A.txt ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR728/000/SRR7288120/SRR7288120.fastq.gz
+
+#wget -r -l2 -A .gz ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR116/
+echo wget -r -l3 -A .gz https://www.ebi.ac.uk/ena/data/view/PRJNA475497
+
+
+wget -r -l2 -A .gz ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR728/000/SRR7288120/SRR7288120.fastq.gz
+wget -r -l2 -A .gz https://www.ebi.ac.uk/ena/data/view/PRJNA475497
+
 # Stop on any error. Print the commands as they execute.
 #set -uex
 # NCBI BioProject ID.
