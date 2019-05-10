@@ -141,11 +141,21 @@ wget -r -l2 -A .gz https://www.ebi.ac.uk/ena/data/view/PRJNA475497
 # Download the FASTQ data for each SRR number.
 cat runids.txt | parallel fastq-dump --split-files -X $READS -outdir reads {}
 
-####
+####serveren ismet exosome ketoltes####
 
 #
 mkdir exosome_data
-cd exosome_03/exosome_data
+cd exosome_03/exosome_datawhile 
+
+while read -r line
+do
+nohup wget $line 
+done < my_ebis_01.txt
+
+while read -r line
+do
+nohup wget $line 
+done < my_downloads_vol2.txt
 
 #esearch -db sra -query $PRJN | efetch -format runinfo > runinfo.csv
 #cat runinfo.csv | cut -f 1 -d , | grep SRR  > exosome_ids.txt
