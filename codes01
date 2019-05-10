@@ -155,6 +155,11 @@ done < my_ebis_01.txt
 while read -r line
 do
 nohup wget $line 
+done < my_ebis_02.txt
+
+while read -r line
+do
+nohup wget $line 
 done < my_downloads_vol2.txt
 
 #esearch -db sra -query $PRJN | efetch -format runinfo > runinfo.csv
