@@ -257,14 +257,15 @@ kraken-build --build --db $kraken-build --build --db $DBNAME
 #######STAR########
 #
 #########CAT egybe illeszteni#########
-#
+#/data/dbs/STAR$ ls
+GRCh37_75  GRCh38_83
 #bash
 #cat File1.txt File2.txt > union.txt
 #STAR -- runMode genomeGenerate \
-     -- genomeDir STARindex \
-     -- genomeFastaFiles *.fa \
-     -- sjdbGTFfile Saccharomyces_cerevisiae.R64-1-1.95.gtf \
-     -- runThreadN 1 
+     -- genomeDir ./STARindex \
+     -- genomeFastaFiles /data/dbs/STAR/Homo_sapiens.GRCh38.dna.primary_assembly.fa \
+     -- sjdbGTFfile /data/dbs/STAR/GRCh38_8Homo_sapiens.GRCh38.83.gtf \
+     -- runThreadN 5 
      
      
 mkdir STARindex
@@ -277,6 +278,24 @@ cd STARindex
 export PATH=$PATH:/data/tools/STAR/bin/Linux_x86_64
 
 ##INDEX###STAR###
+STAR -- runMode genomeGenerate \
+     -- genomeDir ./STARindex \
+     -- genomeFastaFiles *.gz \
+     -- sjdbGTFfile /data/dbs/STAR/GRCh38_8Homo_sapiens.GRCh38.83.gtf \
+     -- runThreadN 5 
+     
+     
+####EZ jo#####   
+
+export PATH=$PATH:/data/tools/STAR/bin/Linux_x86_64
+
+ STAR   --runThreadN 12 \
+        --runMode genomeGenerate \
+        --genomeDir ./STAR_index \
+        --genomeFastaFiles /data/dbs/STAR/GRCh38_83/Homo_sapiens.GRCh38.dna.primary_assembly.fa 
+        
+        
+#########################
 
 cd STARindex
 export PATH=$PATH:/data/tools/STAR/bin/Linux_x86_64
@@ -293,16 +312,29 @@ ls -lh
 
 export PATH=$PATH:/data/tools/STAR/bin/Linux_x86_64
 
-cd exosome_03
+#SRR7288120.fastq #SRR7288180.fastq
 
-STAR -- genomeDir ./STARindex \
-     -- readFilesIn ./exosome_data/SRR8696980.fastq \
+SRR72881$i.fastq
+20 -> 80
+
+#kiírni fileba megszerkezteni és kimásolni
+
+STAR -- genomeDir ./STAR_index \
+     -- readFilesIn $i \
      -- outFileNamePrefix mapped \
      -- outFilterMultimapNmax 1 \
      -- outReadsUnmapped Fastx \
      -- twopassMode Basic \
-     -- runThreadN 3 
+     -- runThreadN 15 
 
+#STAR -- genomeDir STARindex \
+#      -- readFilesIn ERR458493.fastq \
+#      -- outFileNamePrefix mapped \
+#      -- outFilterMultimapNmax 1 \
+#      -- outReadsUnmapped Fastx \
+#      -- outSAMtype BAM SortedByCoordinate \
+#      -- twopassMode Basic \
+#      -- runThreadN 1 
 ls -lh
 
 ###visualise###
