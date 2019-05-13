@@ -319,13 +319,38 @@ SRR72881$i.fastq
 
 #kiírni fileba megszerkezteni és kimásolni
 
+echo *.fastq >star_ids.txt
+
+cut -d ' ' --output-delimiter=$'\n' -f 1- star_ids.txt 
+
+#nemjo###
+while read -r line do
+
 STAR -- genomeDir ./STAR_index \
-     -- readFilesIn $i \
+     -- readFilesIn $line \
      -- outFileNamePrefix mapped \
      -- outFilterMultimapNmax 1 \
      -- outReadsUnmapped Fastx \
      -- twopassMode Basic \
      -- runThreadN 15 
+     
+  done < star_ids.txt
+#####
+##lehet jó#####
+echo *.fastq >star_fastq.txt
+cat star_fastq.txt | sed -e 's/\s/,/g' > star_fastqs.txt
+
+cd /home/eszter/exosome_03/exosome_data/STAR_basic
+export PATH=$PATH:/data/tools/STAR/bin/Linux_x86_64
+
+STAR -- genomeDir ./STAR_index \
+     -- readFilesIn SRR7288120.fastq,SRR7288121.fastq,SRR7288122.fastq,SRR7288123.fastq,SRR7288124.fastq,SRR7288125.fastq,SRR7288126.fastq,SRR7288127.fastq,SRR7288128.fastq,SRR7288129.fastq,SRR7288130.fastq,SRR7288131.fastq,SRR7288132.fastq,SRR7288133.fastq,SRR7288134.fastq,SRR7288135.fastq,SRR7288136.fastq,SRR7288137.fastq,SRR7288138.fastq,SRR7288139.fastq,SRR7288140.fastq,SRR7288141.fastq,SRR7288142.fastq,SRR7288143.fastq,SRR7288144.fastq,SRR7288145.fastq,SRR7288146.fastq,SRR7288147.fastq,SRR7288148.fastq,SRR7288149.fastq,SRR7288150.fastq,SRR7288151.fastq,SRR7288152.fastq,SRR7288153.fastq,SRR7288154.fastq,SRR7288155.fastq,SRR7288156.fastq,SRR7288157.fastq,SRR7288158.fastq,SRR7288159.fastq,SRR7288160.fastq,SRR7288161.fastq,SRR7288162.fastq,SRR7288163.fastq,SRR7288164.fastq,SRR7288165.fastq,SRR7288166.fastq,SRR7288167.fastq,SRR7288168.fastq,SRR7288169.fastq,SRR7288170.fastq,SRR7288171.fastq,SRR7288172.fastq,SRR7288173.fastq,SRR7288174.fastq,SRR7288175.fastq,SRR7288176.fastq,SRR7288177.fastq,SRR7288178.fastq,SRR7288179.fastq,SRR7288180.fastq \
+     -- outFileNamePrefix mapped \
+     -- outFilterMultimapNmax 1 \
+     -- outReadsUnmapped Fastx \
+     -- twopassMode Basic \
+     -- runThreadN 15 
+
 
 #STAR -- genomeDir STARindex \
 #      -- readFilesIn ERR458493.fastq \
