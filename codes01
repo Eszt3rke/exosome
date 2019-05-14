@@ -326,13 +326,13 @@ cut -d ' ' --output-delimiter=$'\n' -f 1- star_ids.txt
 #nemjo###
 while read -r line do
 
-STAR -- genomeDir ./STAR_index \
-     -- readFilesIn $line \
-     -- outFileNamePrefix mapped \
-     -- outFilterMultimapNmax 1 \
-     -- outReadsUnmapped Fastx \
-     -- twopassMode Basic \
-     -- runThreadN 15 
+STAR --genomeDir ./STAR_index \
+     --readFilesIn $line \
+     --outFileNamePrefix mapped \
+     --outFilterMultimapNmax 1 \
+     --outReadsUnmapped Fastx \
+     --twopassMode Basic \
+     --runThreadN 15 
      
   done < star_ids.txt
 #####
@@ -358,6 +358,18 @@ export PATH=$PATH:/data/tools/STAR/bin/Linux_x86_64
  #done
   
  #SRR7288120.fastq SRR7288180.fastq
+  
+  for ((i=20; i<=23; i++)) do  
+     
+     STAR --genomeDir ./STAR_index \
+     --readFilesIn SRR72881$i.fastq \
+     --outFileNamePrefix mapped \
+     --outFilterMultimapNmax 1 \
+     --outReadsUnmapped Fastx \
+     --twopassMode Basic \
+     --runThreadN 15 
+     
+   done
   
  for ((i=20; i<=80; i++)) do  
      
