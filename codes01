@@ -358,12 +358,13 @@ export PATH=$PATH:/data/tools/STAR/bin/Linux_x86_64
  #done
   
  #SRR7288120.fastq SRR7288180.fastq
-  
+ 
+ export PATH=$PATH:/data/tools/STAR/bin/Linux_x86_64
   for ((i=20; i<=23; i++)) do  
      
      STAR --genomeDir ./STAR_index \
      --readFilesIn SRR72881$i.fastq \
-     --outFileNamePrefix mapped \
+     --outFileNamePrefix mapped_SRR72881$i \
      --outFilterMultimapNmax 1 \
      --outReadsUnmapped Fastx \
      --twopassMode Basic \
