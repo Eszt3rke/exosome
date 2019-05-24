@@ -1,0 +1,15 @@
+
+cd /home/eszter/exosome_03/exosome_data/STAR_basic
+export PATH=$PATH:/data/tools/STAR/bin/Linux_x86_64
+
+for ((i=20; i<=80; i++)) do  
+     
+     STAR --genomeDir ./STAR_index \
+     --readFilesIn SRR72881$i.fastq \
+     --outFileNamePrefix mapped_SRR72881$i \
+     --outFilterMultimapNmax 1 \
+     --outReadsUnmapped Fastx \
+     --twopassMode Basic \
+     --runThreadN 15 
+     
+   done
