@@ -466,4 +466,38 @@ plotTracks(
 
 #sashimi plot mutatja be a relációt
 
-###############
+###############featureCounts#############
+##ora ####
+export PATH=$PATH:/data/tools/subread-1.6.3-source/bin
+
+featureCounts \
+  -a Saccharomyces_cerevisiae.R64-1-1.95.gtf \
+  -o featureCounts_results.txt \
+  mappedAligned.sortedByCoord.out.bam
+  
+  
+  #mapped_SRR7288137Aligned.out.sam
+  ##átírni a file neveket
+  
+  cd /home/eszter/exosome_03/exosome_data/STAR_basic
+export PATH=$PATH:/data/tools/subread-1.6.3-source/bin
+
+for ((i=20; i<=80; i++)) do  
+
+featureCounts \
+  -a /data/dbs/STAR/GRCh38_83/Homo_sapiens.GRCh38.83.gtf \
+  -o SRR72881$i_featureCounts_results.txt \
+  mapped_SRR72881$iAligned.out.sam
+  
+  done
+  
+  
+  ###net####
+featureCounts \
+      --primary \
+      -C \
+      -t exon \
+      -g gene_id \
+      -a mmu.mm10.gtf \
+      -o MCL1.DJ.featureCounts \
+      MCL1.DJ.bam
