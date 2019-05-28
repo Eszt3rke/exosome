@@ -1,4 +1,13 @@
 
+
+cd /home/eszter/exosome_03/exosome_data/STAR_basic
+export PATH=$PATH:/data/tools/STAR/bin/Linux_x86_64
+
+ STAR   --runThreadN 12 \
+        --runMode genomeGenerate \
+        --genomeDir ./STAR_index \
+        --genomeFastaFiles /data/dbs/STAR/GRCh38_83/Homo_sapiens.GRCh38.dna.primary_assembly.fa 
+
 cd /home/eszter/exosome_03/exosome_data/STAR_basic
 export PATH=$PATH:/data/tools/STAR/bin/Linux_x86_64
 
@@ -13,3 +22,16 @@ for ((i=20; i<=80; i++)) do
      --runThreadN 15 
      
    done
+
+cd /home/eszter/exosome_03/exosome_data/STAR_basic
+export PATH=$PATH:/data/tools/subread-1.6.3-source/bin
+
+for ((i=20; i<=80; i++)) do  
+
+featureCounts \
+  -a /data/dbs/STAR/GRCh38_83/Homo_sapiens.GRCh38.83.gtf \
+  -o SRR72881$i_featureCounts_results.txt \
+  mapped_SRR72881$iAligned.out.sam
+  
+  done
+
