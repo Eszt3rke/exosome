@@ -479,6 +479,10 @@ featureCounts \
   #mapped_SRR7288137Aligned.out.sam
   ##átírni a file neveket
   
+  #rename Aligned .Aligned *.out.sam########nem ismeri
+  
+  for f in *.out.sam; do mv "$f" "${f/Aligned/.Aligned}";done
+  
   cd /home/eszter/exosome_03/exosome_data/STAR_basic
 export PATH=$PATH:/data/tools/subread-1.6.3-source/bin
 
@@ -486,8 +490,8 @@ for ((i=20; i<=80; i++)) do
 
 featureCounts \
   -a /data/dbs/STAR/GRCh38_83/Homo_sapiens.GRCh38.83.gtf \
-  -o SRR72881$i_featureCounts_results.txt \
-  mapped_SRR72881$iAligned.out.sam
+  -o SRR72881$i.featureCounts.results.txt \
+  mapped_SRR72881$i.Aligned.out.sam
   
   done
   
