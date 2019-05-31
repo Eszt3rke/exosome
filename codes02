@@ -38,3 +38,52 @@ featureCounts \
   mapped_SRR72881$i.Aligned.out.sam
   
   done
+
+
+####STAR masik beallitassal########
+
+     
+cd /home/eszter/exosome_03/exosome_data/STAR_basic     
+     export PATH=$PATH:/data/tools/STAR/bin/Linux_x86_64
+for ((i=20; i<=80; i++)) do  
+STAR --genomeDir ./STAR_index \
+     --readFilesIn SRR72881$i.fastq \
+     --outFileNamePrefix mapped_SortedByCoordinate_SRR72881$i \
+     -- outFilterMultimapNmax 1 \
+     -- outReadsUnmapped Fastx \
+     -- outSAMtype BAM SortedByCoordinate \
+     -- twopassMode Basic \
+     -- runThreadN 15
+done
+ 
+ ####featurecounts masik beallitassal########
+ 
+ for f in *.out.bam; do mv "$f" "${f/Aligned/.Aligned}";done
+  
+  export PATH=$PATH:/data/tools/subread-1.6.3-source/bin
+  for ((i=20; i<=80; i++)) do  
+
+featureCounts \
+  -a /data/dbs/STAR/GRCh38_83/Homo_sapiens.GRCh38.83.gtf \
+  -o SRR72881$i.sortedByCoord.featureCounts.results.txt \
+ mapped_SortedByCoordinate_SRR72881$i.Aligned.sortedByCoord.out.bam
+  
+  done
+ 
+ ######################################
+ 
+ 
+ cd /home/eszter/exosome_03/exosome_data/STAR_basic
+
+R
+
+library(EnrichmentBrowser)
+options(stringsAsFactors=F)
+#read.counts = read.table("*.results.txt", header=T)
+read.counts=read.table("SRR7288134.featureCounts.results.txt")
+head(read.counts)
+
+read.counts = read.table('SRR7288146.featureCounts_results.txt')
+megtart = read.counts[,7] >= 10
+head(megtart)
+read.counts.marad=read.counts[megtart,]
