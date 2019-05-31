@@ -351,7 +351,9 @@ export PATH=$PATH:/data/tools/STAR/bin/Linux_x86_64
 #    -- outReadsUnmapped Fastx \
 #    -- twopassMode Basic \
 #    -- runThreadN 15 
-     
+ 
+ 
+ ###ez is jó más beállítáwa STARnak####
 cd /home/eszter/exosome_03/exosome_data/STAR_basic     
      export PATH=$PATH:/data/tools/STAR/bin/Linux_x86_64
 for ((i=20; i<=80; i++)) do  
@@ -496,6 +498,8 @@ featureCounts \
   
   #rename Aligned .Aligned *.out.sam########nem ismeri
   
+  #ujra futtatni#################!!!!!!###############
+  
   for f in *.out.sam; do mv "$f" "${f/Aligned/.Aligned}";done
   
   cd /home/eszter/exosome_03/exosome_data/STAR_basic
@@ -509,8 +513,20 @@ featureCounts \
   mapped_SRR72881$i.Aligned.out.sam
   
   done
+ 
+ ####ver2#####
+  for f in *.out.bam; do mv "$f" "${f/Aligned/.Aligned}";done
   
+  for ((i=20; i<=80; i++)) do  
+
+featureCounts \
+  -a /data/dbs/STAR/GRCh38_83/Homo_sapiens.GRCh38.83.gtf \
+  -o SRR72881$i.sortedByCoord.featureCounts.results.txt \
+ mapped_SortedByCoordinate_SRR72881$i.Aligned.sortedByCoord.out.bam
   
+  done
+ 
+ 
   ###net####
 featureCounts \
       --primary \
@@ -520,3 +536,53 @@ featureCounts \
       -a mmu.mm10.gtf \
       -o MCL1.DJ.featureCounts \
       MCL1.DJ.bam
+
+#######
+####################################
+
+#R-be beolvasni txt-ket es ott lesz egy objektum es keresni bennuk a geneket
+#
+#Es megnezni h rajuk milyen expresszio van
+#
+#Ez benne van az utso orakban az annotation reszben
+
+#featurecountsoutput
+#.results.txt
+
+# R
+
+#STARBól származő mappelt adatokat beolvassuk
+
+#library(EnrichmentBrowser)
+#uj objektum típus a summarizedexperimetn
+#summarizedexperimetn:egyszerre tároljuk benne a featureket és metaadatokat
+#                     
+#options(stringsAsFactors=F)
+#
+#read.counts = read.table('featCounts_genes.txt', header=T)
+#rownames(read.counts) = read.counts$Geneid
+#readcounts = read.counts[,-c(1,2,3,4,5,6)]
+#colnames(readcounts) = gsub('X.home.classadmin.mat.precomputed.results_alignment.', '', colnames(readcounts))
+#colnames(readcounts) = gsub('_Aligned.sortedByCoord.out.bam', '', colnames(readcounts))
+#
+megtart = rowSums(counts(dds)) >= 10
+dds = dds[megtart,]
+
+#cripserseek.merged = merge(e, j, by.x='crisperseek', by.y='crisperseek', all.x=T, all.y=T)
+
+
+cd /home/eszter/exosome_03/exosome_data/STAR_basic
+
+R
+
+library(EnrichmentBrowser)
+options(stringsAsFactors=F)
+#read.counts = read.table("*.results.txt", header=T)
+read.counts=read.table("SRR7288134.featureCounts.results.txt")
+head(read.counts)
+
+read.counts = read.table('SRR7288146.featureCounts_results.txt')
+megtart = read.counts[,7] >= 10
+head(megtart)
+read.counts.marad=read.counts[megtart,]
+
