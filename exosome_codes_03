@@ -1,0 +1,10 @@
+cd /data/eszter/exosome_03
+
+mkdir STAR_index
+
+export PATH=$PATH:/data/tools/STAR/bin/Linux_x86_64
+
+ STAR   --runThreadN 12 \
+        --runMode genomeGenerate \
+        --genomeDir ./STAR_index \
+        --genomeFastaFiles /data/dbs/STAR/GRCh38_83/Homo_sapiens.GRCh38.dna.primary_assembly.fa 
